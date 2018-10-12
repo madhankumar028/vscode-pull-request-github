@@ -133,3 +133,7 @@ export function formatError(e: any): string {
 		return e.message;
 	}
 }
+
+export interface Predicate<T> {
+	(input: T): boolean;
+}
